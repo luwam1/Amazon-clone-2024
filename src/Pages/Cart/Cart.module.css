@@ -1,0 +1,98 @@
+.container{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    margin-top: 10px;
+
+}
+.container img{
+    width: 100px !important;
+}
+.cart_product{
+    display: flex;
+    gap:5px
+}
+
+.btn_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn{
+    padding: 5px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffff;
+    border: none;
+}
+.btn :hover{
+    fill: #ffd000;
+}
+
+.container div:not(.subtotal)
+{
+    height: auto !important;;
+}
+.cart_container{
+    padding: 5px;
+}
+.cart_container h2 ,
+.cart_container h3
+{
+padding: 10px;
+}
+.cart_container{
+    margin: 10px;
+}
+.total_container{
+    padding: 5px;
+    min-width: 300px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgb(193, 193, 193);
+    border-color:  rgb(193, 193, 193); ;
+    border-radius: 5px;
+
+} 
+.total_container a {
+text-align: center;
+width: 100%;
+border: none;
+background-color: rgb(250, 193, 4);
+border-radius: 5px;
+padding: 10px 10px;
+text-decoration: none;
+color: black;
+}
+.total_container a:hover{
+    background: rgb(250, 213, 4)
+}
+.total_container >div ,
+.total_container >span{
+display: flex;
+gap: 20px;
+}
+/* styling for empty cart messages */
+.empty_cart_message {
+  text-align: center;
+  padding: 20px;
+}
+
+.empty_cart_message a {
+  color: blue;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width:960px) {
+    .container{
+        flex-direction: column;
+        order: 1;
+    }
+}
